@@ -7,7 +7,8 @@ export default function Forms() {
     const [formData, setFormData] = useState({
         firstName: "",
         lastName: "",
-        email:""
+        email:"",
+        textarea:""
     })
 
     console.log(formData)
@@ -45,6 +46,12 @@ export default function Forms() {
                     onChange={toggle}
                     name="email"
                     value={setFormData.email}
+                />
+                <textarea
+                    placeholder="text"
+                    onChange={toggle}
+                    name="textarea"
+                    value={setFormData.value}
                 />
             </form>
         </>
