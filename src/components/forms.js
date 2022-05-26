@@ -4,7 +4,11 @@ import tw from "twin.macro";
 
 
 export default function Forms() {
-    const [name, setName] = useState({firstName: "", lastName: ""})
+    const [name, setName] = useState({
+        firstName: "",
+        lastName: "",
+        email:""
+    })
 
     console.log(name)
 
@@ -30,6 +34,12 @@ export default function Forms() {
                     placeholder="first name"
                     onChange={toggle}
                     name="lastName"
+                />
+                <input
+                    type="text"
+                    placeholder="first name"
+                    onChange={toggle}
+                    name="email"
                 />
             </form>
         </>
