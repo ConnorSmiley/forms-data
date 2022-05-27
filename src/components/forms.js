@@ -21,6 +21,9 @@ export default function Forms() {
             //only to check if checkbox is true or false
             return {
                 ...prev,
+                //normally
+                //
+                // [name]:value
                 [name]:type === "checkBox" ? checkBox : value
             }
         })
